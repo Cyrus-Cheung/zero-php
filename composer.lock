@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "24bd61f66f2e29679c7e233dcbb8571a",
+    "content-hash": "e3f0cbb588894da71c093e5c83ce713b",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -374,7 +374,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">= 5.3.0"
+        "php": ">= 7.0.0"
     },
     "platform-dev": []
 }

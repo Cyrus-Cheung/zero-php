@@ -48,18 +48,14 @@ class ZYC
         }
     }
 
-    public function assign($name, $value)
+    public function render($file, $assign = [])
     {
-        $this->assign[$name] = $value;
-    }
-
-    public function display($file)
-    {
-        $file = APP . '/views/' . $file;
-
-        if (is_file($file)) {
-            extract($this->assign);
-            include $file;
-        }
+        $loader = new \Twig_Loader_Filesystem(APP . '/views');
+        $twig = new \Twig_Environment($loader, array(
+            'cache' => ZEROYC . '/var/cache/views',
+            'debug' => DEBUG
+        ));
+        $template = $twig->load($file);
+        $template->display($assign);
     }
 }

@@ -3,6 +3,6 @@
 return [
     'DRIVE' => 'file',
     'OPTION' => [
-        'PATH' => ZEROYC . '/log/'
+        'PATH' => ZEROYC . '/var/logs/'
     ]
 ];
